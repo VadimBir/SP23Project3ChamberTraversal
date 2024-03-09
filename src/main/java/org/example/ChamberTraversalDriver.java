@@ -8,26 +8,27 @@ public class ChamberTraversalDriver {
 
     public static char[][] readMaze(String fileName){
         // Code here
-        // During week 8, I was showing how to read the file. You want to convert the file lines, into a 2-D array.
-        // Step.1 Read file
-        // Step.2 Get all the rows
-        // Step.3 Split the rows into each character
-        // Step.4 How you want to have each row being an element for an array and each row element to be an array itself
+        // During week 8, I was showing how to read the file. For this assignment you want to convert the file lines, into a 2-D array.
+        // Assignment's Read Solution Guidence:
+            // Step.1 Read file
+            // Step.2 Get all the rows
+            // Step.3 Split the rows into each character
+            // Step.4 How you want to have each row being an element for an array and each row element to be an array itself
 
     }
 
     public static void Printmaze(char[][] maze){
-        // Designated print out function for a maze, optional
+        // Designated print out function for a maze, optional for the assignment project
         // What is a 2D array? its an array of arrays, via a for loop you can print a 1D array, how to print an array or arrays?
     }
 
     public static void move(char[][] maze, int row, int column, int count) {
         // Use recursion to move through the maze at a given coordinate and flood the given chamber with the count
-        // Recurdion would create a new function and it allows to move the state.
+        // Recursion would create a new function and it allows to move the state.
         // For this method, you are at given [Y][X], calling the same method with [Y][X+1] would allow to literally be at the point
         // relative to which you perform what ever is needed
 
-        // Tip: you want to put the int number as a character into the cell (Line below puts the 1 as '1' not the character with id number of 1
+        // Tip: you want to put the int number as a character into the cell (Line below puts the 1 as '1' not the character with id number of 1)
             // maze[row][column] = (char) (count+'0'); // Using % 10 to keep single digits
     }
 
@@ -53,12 +54,12 @@ public class ChamberTraversalDriver {
     }
 
     public static void main(String[]args) throws FileNotFoundException{
-        System.out.println("Programming Fundamentals");
+        System.out.println("Programming Fundamentals Course");
         System.out.println("NAME: <your name>");    // replace with your name
         System.out.println("PROGRAMMING ASSIGNMENT 3");
         System.out.println("Welcome to Chamber Traversal!");
 
-        // File given at the room of the project, check it if needed
+        // File given at the root of the project, you can check it to solve the assignment
         // Read the file
         char[][] maze = readMaze("field.txt"); // 5 chambers number of col 20, number of rows 10
 
